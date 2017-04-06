@@ -91,7 +91,7 @@ def processRequest(req):
 def makeWebhookResult(data):
 
     print("Response:")
-    print(speech)
+    print(data)
 
     return {
         "speech": data,
