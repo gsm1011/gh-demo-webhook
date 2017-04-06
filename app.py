@@ -47,6 +47,7 @@ def processRequest(req):
     host = '192.168.1.1'
     port = '9001'
     url = 'http://' + host + ':' + port
+    url = 'https://www.google.com'
     errorMsg = 'Something wrong with the cast controller.'
     
     if action == 'displayImage':
