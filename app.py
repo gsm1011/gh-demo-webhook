@@ -43,6 +43,10 @@ def webhook():
 # play video.
 def processRequest(req):
     action = req.get("result").get("action")
+    
+    print ('Action:')
+    print (action)
+    
     what = 'what'
     host = '192.168.1.1'
     port = '9001'
