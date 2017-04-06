@@ -42,6 +42,10 @@ def webhook():
 # previous image.
 # play video.
 def processRequest(req):
+    '''
+    Handling the action requests. The action name should be specified in the
+    api.ai platform.
+    '''
     action = req.get("result").get("action")
     
     print ('Action:')
