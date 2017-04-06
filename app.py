@@ -53,7 +53,7 @@ def processRequest(req):
     url = 'http://' + host + ':' + port
     url = 'https://www.google.com'
     errorMsg = 'Something wrong with the cast controller.'
-    action = 'abc'
+    # action = 'abc'
     if action == 'displayImage':
         r = requests.get(url + '/displayImage')
         if r.status_code != 200:
