@@ -52,10 +52,10 @@ def processRequest(req):
     print (action)
     
     what = 'what'
-    host = '192.168.1.1'
-    port = '9001'
+    host = '71.10.207.235'
+    port = '8081'
     url = 'http://' + host + ':' + port
-    url = 'https://www.google.com'
+    # url = 'https://www.google.com'
     errorMsg = 'Something wrong with the cast controller.'
     # action = 'abc'
     if action == 'displayImage':
