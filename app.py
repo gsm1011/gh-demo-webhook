@@ -63,28 +63,28 @@ def processRequest(req):
         if r.status_code != 200:
             what = errorMsg
         else:
-            what = 'displaying the image now. '
+            what = 'Sure, showing an image on your TV using chrome cast.'
             
     elif action == 'nextImage':
         r = requests.get(url + '/nextImage')
         if r.status_code != 200:
             what = errorMsg
         else:
-            what = 'displaying next image'
+            what = 'Sure, showing the next image.'
             
     elif action == 'previousImage':
         r = requests.get(url + '/previousImage')
         if r.status_code != 200:
             what = errorMsg
         else:
-            what = 'previous image'
+            what = 'Sure, displaying the next image.'
             
     elif action == 'playVideo':
         r = requests.get(url + '/playVideo')
         if r.status_code != 200:
             what = errorMsg
         else:
-            what = 'playing video.'
+            what = 'Sure, playing commercial on your TV using chrome cast'
     else:
         what = 'what do you want to do'
 
